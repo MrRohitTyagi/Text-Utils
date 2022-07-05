@@ -49,7 +49,7 @@ function App() {
       setbuttonText("Dark Mode")
 
       AlertMsg("Switched to Lightmode", "success")
-      document.title = "TextUtils - Lightmode"
+      // document.title = "TextUtils - Lightmode"
     }
     else {
       AlertMsg("Switched to Darkmode", "success")
@@ -62,7 +62,7 @@ function App() {
 
       })
       setbuttonText("Light Mode")
-      document.title = "TextUtils - DarkMode"
+      // document.title = "TextUtils - DarkMode"
     }
 
 
@@ -90,19 +90,20 @@ function App() {
 
         <Routes>
 
-          <Route  path='/' element={<div className="container">
+          <Route path='/' element={<div className="container">
 
             <Alert alert={alert} />
 
             {/* passing function as a prop(alertmsg) it can be called from the  component */}
-            <TextForm showalert={AlertMsg} heading="Enter Your Text Here" />
+            <TextForm showalert={AlertMsg} heading=" Try Text-util Word counter | character counter | lowercase to uppercase | uppercase to lowercase
+" />
           </div>} />
 
-            <Route path='/about' element={<About />}/>
+          <Route path='/about' element={<About />} />
         </Routes>
 
 
-        
+
 
       </BrowserRouter>
     </div>

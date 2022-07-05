@@ -140,7 +140,11 @@ i {
 .btn:hover {
 	transform: scale(1.05);
 }
-
+.myalertc{
+	top:5rem;
+	width: 85vw;
+	margin: auto;
+}
 
 @media screen and (max-device-width: 450px) {
 
@@ -167,5 +171,10 @@ i {
 		display: flex;
 		justify-content: center;
 	}
-
+	.myalertc{
+		width: 100vw;
+		top: 5rem;
+		left :0;
+		font-size: small;
+	}
 }

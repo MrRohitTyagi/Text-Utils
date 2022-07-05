@@ -119,7 +119,7 @@ export default function TextForm(props) {
 
 
                 <h4 id='calc' style={{textAlign:"center"}} >
-                    {text.split(" ").length - 1} words ,  {text.length} characters , {(0.008 * text.split(" ").length).toFixed(2)} Minutes to read
+                    {text.split(" ").filter((ele)=>{ return ele.length !== 0}).length} words ,  {text.length} characters , {(0.008 * text.split(" ").filter((ele)=>{ return ele.length !== 0}).length).toFixed(2)} Minutes to read
                 </h4>
 
 
